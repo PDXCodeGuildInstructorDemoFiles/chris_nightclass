@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Awesome Site</title>
+  </head>
+  <body>
+    <div>
+      <!DOCTYPE html>
+      <html>
+      <body>
+
+      <form>
+        First name:<br>
+        <input id="name" type="text" name="first_name" placeholder="Enter First Name">
+        <br>
+        Last name:<br>
+        <input type="password" id="password" name='password'>
+        <br><br>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+      <div id="errMsg">
+
+      </div>
+
+      </body>
+      </html>
+
+    </div>
+    <script>
+
+      var submit = document.getElementById('submit');
+
+      submit.addEventListener('click', function(e) {
+        e.preventDefault();var name = document.getElementById('name').value;
+        console.log(name);
+        alert(name);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do</title>
+    <style>
+        table tr td {
+            border: solid black 1px;
+        }
+
+        #tableDiv {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .row0 {
+            width: 5%;
+            text-align: center;
+        }
+
+        .row1 {
+            width: 85%;
+            text-align: center;
+        }
+
+        .row2 {
+            width: 10%;
+            text-align: center;
+        }
+
+        #toDoInput {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="tableDiv">
+    <table id="toDoList">
+        <tr>
+            <td class="row0">#</td>
+            <td class="row1">Item</td>
+            <td class="row2">Done</td>
+        </tr>
+    </table>
+    <br>
+
+    <span id="toDoInput">
+        <input class="input" type="text" id="toDoInputText"><button id="enter">Enter</button>
+    </span>
+
+    <ul id="test">
+        <li data-value="1.0">
+            some thing
+        </li>
+
+        <li data-value="1.5">
+            some thing
+        </li>
+    </ul>
+
+    <br>
+    <button id="addToDo">Add item to list</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
